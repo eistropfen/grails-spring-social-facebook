@@ -43,13 +43,13 @@ grails.project.dependency.resolution = {
     grailsRepo "http://repo.clickonero.com/nexus/content/repositories/snapshots/"
   }
   dependencies {
-    def springSocialVersion = "1.1.0.M2"
+    def springSocialVersion = "1.1.0.M4"
     compile("org.springframework.social:spring-social-facebook:${springSocialVersion}") { transitive = false }
 
     compile("org.codehaus.jackson:jackson-mapper-asl:1.9.2")
   }
   plugins {
-    compile(":springsocial-core:0.1.33-SNAPSHOT")
+//    compile(":springsocial-core:0.1.33-SNAPSHOT")
 
     /*
     This validation is for prevent load the following plugins in previous Grails versions.
@@ -64,7 +64,7 @@ grails.project.dependency.resolution = {
 }
 
 grails.project.repos.clickonero.url = "http://repo.clickonero.com/nexus/content/repositories/snapshots/"
-
+//grails.plugin.location.'grails-spring-social-core'="../grails-spring-social-core"
 grails.release.scm.enabled = false
 //grails.project.repos.default = "grailsCentral"
 grails.project.repos.default = "clickonero"
